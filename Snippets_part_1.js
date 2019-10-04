@@ -1,4 +1,17 @@
-// [1] Jak sprawdzić, czy wyrażenie funkcyjne spełnia jakieś proste kryterium dla wszytskich elementów tablicy:
+/*
+W tej części: Part 1:
+[1] Jak sprawdzić, czy wyrażenie funkcyjne spełnia jakieś proste kryterium dla wszystkich elementów tablicy
+[2] Jak sprawdzić, czy wszystkie elementy tablicy są jednakowe (równe sobie)
+[3] Jak zmienić elementy tablic wewnętrznych (zagnieżdżonych) na stringi rozdzielone przecinkami (lub innym separatowem)
+[4] Jak zamienić elementy tablicy w kolejne punkty listy i umieścić je na stronie internetowej
+[5] Jak policzyć średnią arytmetyczną z liczb umieszczonych w tablicy
+[6] Jak policzyć średnią arytmetyczną ze zbioru, na którego elementach najpierw wykonujemy jakąć funkcję
+[7] Jak rozdzielić elementy tablicy na dwie grupy, bazując na wartościach innej tablicy (tzw. filtrującej)
+[8] Jak rozdzielić elementy tablicy na dwie grupy w oparciu o wskazane wyrażenie funkcyjne
+*/
+
+
+// [1] Jak sprawdzić, czy wyrażenie funkcyjne spełnia jakieś proste kryterium dla wszystkich elementów tablicy
 const all = (arr, fn = Bollean) => arr.every(fn);
 /* 'all' powyżej, to funkcja z dwoma argumentami: tablicą i boolean */
 // w sprawdzeniach ponieżej też takie dwa argumenty, w tym zmienna (argument funkcji 'x' lub 'i'), reprezentująca elementy tablicy 
@@ -6,7 +19,7 @@ all([2, 3, 4, 5], x => x < 9);     // true
 all([4, 5, 8, 77], i => i > 12);   // false
 
 
-// [2] Jak sprawdzić, czy wszystkie elementy tablicy są jednakowe (równe sobie);
+// [2] Jak sprawdzić, czy wszystkie elementy tablicy są jednakowe (równe sobie)
 // wyrażenie funkcyjne jednoargumentowe, porównujące każdy element z pierwszym
 const allEqual = array => array.every(val => val === array[0]);
 // w sprawdzeniu poniżej proste tablice
@@ -34,7 +47,7 @@ arrayToCSV([ ['1', 'a', 'b'], ['2', 'c', 'd']], '; ');
 */
 
 
-// [4] Jak zamienić elementy tablicy w kolejne punkty listy i umieścić na stronie
+// [4] Jak zamienić elementy tablicy w kolejne punkty listy i umieścić je na stronie internetowej
 /* Weźmy dwuargumentowe wyrażenie funkcyjne: (1) tablica z elementami do 'wylistowania' i (2) identyfikator listy;
 niech to wyrażenie zwraca element do którego wstawimy listę (najlepiej 'ul' o określonym 'id'), a następnie jako treść tego elementu niech w pętli wstawia każdy z elementów tablicy jako 'li';
 gdzie join('') usuwa przecinki rozdzielające elementy w tablicy */
@@ -48,7 +61,7 @@ const arrayToHtmlList = (arr2, listID) =>
 // Dokładnie taki działający przykład w folderze 'list-from-array'
 
 
-// [5] Jak policzyć średnią arytmetyczną z liczb umieszczonych w tablicy:
+// [5] Jak policzyć średnią arytmetyczną z liczb umieszczonych w tablicy
 // wyrażenie funkcyjne jednoargumentowe (!) posługujące się wbudowaną metodą 'reduce()' z argumentem początkowym zero:
 const average = (...nums) => nums.reduce((acc, val) => acc + val, 0 ) / nums.length;
 // w przykładzie poniżej zastosowano operator rozproszenia
@@ -74,7 +87,7 @@ averageBy([{n: 4}, {n: 2}, {n: 8}, {n: 6}], 'n'); // też daje 5
 averageBy([{n: 4}, {n: 1}, {n: 4}, {n: 3}], o => o.n * Math.PI); // daje 6
 
 
-// [7] Jak rozdzielić elementy tablicy na dwie grupy, bazując na wartościach innej tablicy (tzw. filtrującej).
+// [7] Jak rozdzielić elementy tablicy na dwie grupy, bazując na wartościach innej tablicy (tzw. filtrującej)
 /* Jeśli element tablicy filtrującej jest 'true', to odpowiadający mu (wartość indeksu) element tablicy z istotną zawartością należeć będzie do pierwszej grupy, a w innym przypadku, należeć będzie do drugiej grupy
 */
 /* Mamy wyrażenie funkcyjne dwuargumentowe: (1) tablica z zawartością, (2) tablica filtrująca, 
