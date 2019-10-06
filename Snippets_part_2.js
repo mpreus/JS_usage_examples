@@ -2,7 +2,12 @@
 W tej części: Part 2:
 [1] Jak sprawdzić czy dół strony internetowej jest widoczny na ekranie
 [2] Jak rozponać wielkość stringu w baitach (bytes)
-[3] 
+[3] Jak zmienić pierwszą literę stringu na wielką 
+[4] Jak zmienić każdą pierwszą literę w stringu wielowyrazowym na wielką
+[5] Jak zmienić pierwszą literę stringu na małą
+[6] Jak zmienić dowolny element w tablicę
+[7] Jak usunąć javascriptowe wartości fałszywe z tablicy
+[8] Jak automatycznie zliczyć wszystkie elementy danej wartości w tablicy 
 */
 
 
@@ -51,9 +56,34 @@ const capitalizeEveryWord = myImportantString => {
 capitalizeEveryWord("pragmatyczny programista"); // zwaca: "Pragmatyczny Programista"
 
 
+// [5] Jak zmienić pierwszą literę stringu na małą
+const decapitalize = ([first, ...rest]) => first.toLowerCase() + rest.join('');
+// Ten sam mechanizm jak powyżej, jedynie metoda 'toLowerCase()'
+decapitalize('Mój świat'); // zwraca: 'mój świat'
 
 
+// [6] Jak zmienić dowolny element w tablicę
+const castArray = anyValue => (Array.isArray(anyValue) ? anyValue : [anyValue]);
+// jednoargumentowe wyrażenie funkcyjne sprawdzające, czy rozpatrywany element jest tablicą, czy nie; jeśli tak, to zostawia go jak jest, jeśli nie - zamienia go w tablicę
+castArray("jakiś string"); // zwraca: [ 'jakiś string' ]
+castArray(1); // zwraca: [1]
+castArray([1]); // zwraca również: [1]
 
+
+// [7] Jak usunąć javascriptowe wartości fałszywe z tablicy
+// należą do nich vartości, które w kontekście Boolean stają się fałszem:
+// (1) false, (2) 0, (3) null, (4) undefined, (5) NaN, (6) pusty string dowolnego rodzaju: '', "", ``
+const falsiesRemoved = arr6 => arr6.filter(Boolean);
+// takie jednoargumentowe wyrażenie funkcyjne domyślnie zatrzymuje tylko wartości 'true'
+falsiesRemoved([1, 2, 0, 3, false, 4, '', 5, "number", NaN, 88, 'data', ``, 13]); // zwraca: [ 1, 2, 3, 4, 5, 'number', 88, 'data', 13 ]
+// ponieważ 0, false, '', NaN, `` przyjmują wartość 'false'
+
+
+// [8] Jak automatycznie zliczyć wszystkie elementy danej wartości w tablicy
+const countOccurrences = (arr7, countedValue) => arr7.reduce( (a, c) => (c === countedValue ? a + 1 : a), 0);
+// w dwuargumentowym wyrażeniu, pierwsza jest rozpatrywana tablica, drugim - element zliczany;
+// za pomocą metody 'reduce()' sprawdzamy czy bieżąca wartość jest identyczna z poszukiwaną, czy nie; jeśli tak - do akumulatora 'a' dodajemy 1, jeśli nie - acumulator 'a' pozostaje ze swą poprzednią wartością (wartość początkowa akumulatora 'a' jest ustalona na 0)
+countOccurrences([1, 2, 3, 4, 2, 5, 6, 7, 2, 1, 9], 2); 
 
 
 
