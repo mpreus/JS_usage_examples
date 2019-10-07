@@ -1,5 +1,6 @@
 /*
-W tej części: Part 2:
+W części 2:
+
 [1] Jak sprawdzić czy dół strony internetowej jest widoczny na ekranie
 [2] Jak rozponać wielkość stringu w baitach (bytes)
 [3] Jak zmienić pierwszą literę stringu na wielką 
@@ -84,15 +85,4 @@ const countOccurrences = (arr7, countedValue) => arr7.reduce( (a, c) => (c === c
 // w dwuargumentowym wyrażeniu, pierwsza jest rozpatrywana tablica, drugim - element zliczany;
 // za pomocą metody 'reduce()' sprawdzamy czy bieżąca wartość jest identyczna z poszukiwaną, czy nie; jeśli tak - do akumulatora 'a' dodajemy 1, jeśli nie - acumulator 'a' pozostaje ze swą poprzednią wartością (wartość początkowa akumulatora 'a' jest ustalona na 0)
 countOccurrences([1, 2, 3, 4, 2, 5, 6, 7, 2, 1, 9], 2); 
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,5 +1,6 @@
 /*
-W tej części: Part 1:
+W części 1:
+
 [1] Jak sprawdzić, czy wyrażenie funkcyjne spełnia jakieś proste kryterium dla wszystkich elementów tablicy
 [2] Jak sprawdzić, czy wszystkie elementy tablicy są jednakowe (równe sobie)
 [3] Jak zmienić elementy tablic wewnętrznych (zagnieżdżonych) na stringi rozdzielone przecinkami (lub innym separatowem)
@@ -136,13 +137,5 @@ bifurcateBy([12, 23, 1, 8, 9], x => x % 3 === 0);
 // czy liczba jest całkowita:
 bifurcateBy([11, 23.4, 1, 8, 9], x => Number.isInteger(x));
 // co daje: [ [ 11, 1, 8, 9 ], [ 23.4 ] ]
-
-
-
-
-
-
-
-
 
 
