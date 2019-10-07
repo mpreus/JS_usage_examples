@@ -1,4 +1,5 @@
-// W tej części: Part 3:
+// W części 3:
+
 // [1] Jak sprawdzić dokładny adres url bieżącej strony 
 // [2] Jak automatycznie sprawdzić, który kolejny dzień roku mamy dzisiaj (i ile dni do końca roku)
 // [3] Jak sprawdzić jaki dzisiaj jest dzień tygodnia
@@ -7,6 +8,8 @@
 // [6] Jak automatycznie sprawdzić, czy konkretna data wypada po innej, wskazanej jako referencyjna
 // [7] Jak automatycznie sprawdzić, czy konkretna data wypada przed inną, wskazaną jako referencyjna
 // [8] Jak automatycznie sprawdzić czy podane daty są takie same 
+// [9] Jak sprawdzić która data z przeszłości jest nam najbliższa
+// [10] Jak sprawdzić która data z posiadanego zbioru jest najwcześniejsza
 
 
 // [1] Jak sprawdzić dokładny adres url bieżącej strony 
@@ -96,21 +99,46 @@ getDaysNumberBtwDates(new Date('2019-01-01'), new Date('2019-10-07'));
 const isAfterDate = (dateChecked, dateRef) => dateChecked > dateRef;
 // kolejność dat: data sprawdzana - data referencyjna
 isAfterDate(new Date('2019-10-07'), new Date('2019-10-03'));
-// wskaże, że data sprawdzana wypada po dacie referencyjnej
+// wskaże, że data sprawdzana wypada po dacie referencyjnej: true
 
 
 // [7] Jak automatycznie sprawdzić, czy konkretna data wypada przed inną, wskazaną jako referencyjna
 const isBeforeDate = (dateChecked1, dateRef1) => dateChecked1 < dateRef1;
 // kolejność dat: data sprawdzana - data referencyjna
 isBeforeDate(new Date('2019-10-03'), new Date('2019-05-14'));
-// wskaże, że data sprawdzana nie wypadła przed datą referencyjną
+// wskaże, że data sprawdzana nie wypadła przed datą referencyjną: false
 
 
 // [8] Jak automatycznie sprawdzić czy podane daty są takie same 
 const isSameDate = (date1, date2) => date1.toISOString() === date2.toISOString();
 // metoda 'toISOString()' zwraca datę jako znormalizowany string, np.: 2019-10-07T10:54:13.181Z
 isSameDate(new Date('2018-02-02'), new Date('2018-02-02'));
-// wskaże, że podane daty są jednakowe
+// wskaże, że podane daty są jednakowe: true
+
+
+// [9] Jak sprawdzić która data z przeszłości jest nam najbliższa
+const latestDate = (...dates) => new Date(Math.max.apply(null, ...dates));
+// wyszukujemy więc daty największej z posiadanych
+const array = [
+  new Date('2019-10-02'),
+  new Date('2019-05-14'),
+  new Date('2017-09-02'), 
+  new Date('2011-11-29')
+];
+latestDate(array); // zwraca: 2019-10-02T00:00:00.000Z
+
+
+// [10] Jak sprawdzić która data z posiadanego zbioru jest najwcześniejsza
+const minDate = (...dates) => new Date(Math.min.apply(null, ...dates));
+// wyszukujemy więc daty najmniejszej z posiadanych
+const array1 = [
+  new Date('2019-10-02'),
+  new Date('2019-05-14'),
+  new Date('2017-09-02'), 
+  new Date('2011-11-29')
+];
+minDate(array1); // zwraca: 2011-11-29T00:00:00.000Z
+
 
 
 // opis całości w 'readme' uzupełnić o uwagę, że każdy ze snipetów został sprawdzony
