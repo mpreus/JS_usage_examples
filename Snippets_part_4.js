@@ -103,7 +103,6 @@ distance(1, 2, 3, 3); // zwraca: 2.2360
 JavaScriptowa metoda Math.hypot() zwraca pierwiastek kwadratowy z sumy kwadratów argumantów - długość przeciwprostokątnej w trójkącie 
 */
 
-
 /* 
 UWAGA - jednosekundowa zwłoka z zadania 3 będzie rozpoczynała sie po wykonaniu wszytskich przykładów w danym pliku, występujących po zdefiniowaniu: 
 const defer = (fn, ...args) => setTimeout(fn, 1000, ...args);
