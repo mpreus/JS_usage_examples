@@ -1,7 +1,15 @@
 /*
-W części 6
+W części 7
 
 [1] Jak zaimplementować funkcję na każdym elemencie tablicy, począwszy od ostatniego (od prawej)
+[2] Jak zaimplementować funkcję na każdej właściwości obiektu
+[3] Jak pozyskać (i zapisać) nazwę funckji
+[4] Jak pozyskać wartość stylu CSS zastosowanego do konkretnego elementu
+[5] Jak sprawdzić, czy dane element strony (html) ma przypisaną określoną klasę
+[6] Jak zwrócić pierwszy element z tablicy
+[7] Jak sprawdzić indeksy określonego elementu tablicy nawet jeśli występuje w tablicy wielokrotnie
+[8] Jak usunąc z tablicy kilka ostatnich elementów
+[9] Jak utworzyć tablicę zawierającą elementy wspólne dwóch innych tablic
 */
 
 
@@ -64,7 +72,7 @@ const headElem = array => array[0];
 headElem([2, 4, 6, 8, 10]); // zwraca: 2
 
 
-// [7] Jak sprawdzić indeksy określonego elementu tablicy
+// [7] Jak sprawdzić indeksy określonego elementu tablicy nawet jeśli występuje w tablicy wielokrotnie
 const indexOfAllValues = (arr, val) => arr.reduce((acc, el, idx) => (el === val ? [...acc, idx] : acc), []);
 // zwróci wszystkie indeksy w formie tablicy (jeśli wskazany element występuje raz lub więcej razy), albo pustą tablicę
 indexOfAllValues([1, 2, 3, 1, 4, 5, 6, 7], 1); 

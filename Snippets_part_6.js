@@ -1,3 +1,13 @@
+/*
+W części 6
+
+[1] Jak dodać jedną tablicę (np. 'arr2') do innej (np. 'arr1') na jej końcu
+[2] Jak wyczyścić tablicę przypisaną do 'const'
+[3] Jak zwrócić elementy tablicy, które po zastosowaniu wobec każdego z nich określonej funkcji, istnieją jednocześnie (po zastosowaniu wobec każdego z nich określonej funkcji) w drugiej tablicy 
+
+*/
+
+
 // [1] Jak dodać jedną tablicę (np. 'arr2') do innej (np. 'arr1') na jej końcu
 const arr1 = [1, 2, 3, 4];
 const arr2 = [5, 6, 7, 8];
@@ -22,5 +32,19 @@ console.log(arr3); // teraz zwraca pustą tablicę: []
 // można też dopisać coś do takiej tablicy:
 arr3.push(2); arr3.push(3);
 arr3 // zwraca: [ 2, 3 ]
+
+
+// [3] Jak zwrócić elementy tablicy, które po zastosowaniu wobec każdego z nich określonej funkcji, istnieją jednocześnie (po zastosowaniu wobec każdego z nich określonej funkcji) w drugiej tablicy 
+const commonElemsByFn = (arrA, arrB, fn) => {
+  const setOfElems = new Set(arrB.map(fn));
+  return arrA.filter(x => setOfElems.has(fn(x)));
+};
+// funkcja z tablicy 'arrB' tworzy zestaw elementów (instancja obiektu 'set') i stosuje na jego elementach funkcję 'fn'
+// następnie zwraca tablicę z takimi elementami 'arrA', które po zastosowaniu na nich funkcji 'fn' wytrzymują porównanie z zestawem utworzonym z 'arrB' 
+commonElemsByFn([2.1, 1.2, 3.3], [2.3, 3.4, 4.1], Math.floor);
+// zwraca: [ 2.1, 3.3 ]
+// ponieważ zostaną zredukowane do (odpowiednio): 2 i 3, które to wartości po zredukowaniu występują w obu tablicach
+
+
 
 
