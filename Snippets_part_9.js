@@ -5,7 +5,7 @@ W części 9
 [2] Jak znaleźć największą liczbę w tablicy (lub kilka największych liczb w zbiorze)
 [3] Jak znaleźć najmniejszą liczbę w tablicy (lub kilka najmniejszych liczb w zbiorze)
 [4] Jak wygenerować przypadkową liczbę ze wskazanego zakresu
-[5] Jak wygenerować przypadkową liczbę ze wskazanego zakresu
+[5] Jak wygenerować przypadkową liczbę całkowitą ze wskazanego zakresu
 [6] Jak wygenerować tablicę ze wskazaną liczbą liczb całkowitych w ramach zdefiniowanego zakresu
 [7] Jak zaokrąglić liczbę zmiennoprzecinkową do określonego miejsca po przecinku
 [8] Jak pobrać przypadkową liczbę z podanej tablicy

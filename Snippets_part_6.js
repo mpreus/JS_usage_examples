@@ -3,7 +3,8 @@ W części 6
 
 [1] Jak dodać jedną tablicę (np. 'arr2') do innej (np. 'arr1') na jej końcu
 [2] Jak wyczyścić tablicę przypisaną do 'const'
-[3] Jak zwrócić elementy tablicy, które po zastosowaniu wobec każdego z nich określonej funkcji, istnieją jednocześnie (po zastosowaniu wobec każdego z nich określonej funkcji) w drugiej tablicy 
+[3] Jak zwrócić elementy tablicy, które po zastosowaniu wobec każdego z nich określonej funkcji, istnieją jednocześnie 
+(po zastosowaniu wobec każdego z nich określonej funkcji) w drugiej tablicy 
 [4] Jak sprawdzić, który ciąg znaków w określonym stringu jest najdłuższy
 [5] Jak sprawdzić czy dane słowo jest anagramem innego słowa (czyli zawierają te same litery w innej kolejności)
 [6] Jak sprawdzić czy wprowadzony argument jest iterowalny jak tablica
