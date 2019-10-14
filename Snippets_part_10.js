@@ -81,5 +81,3 @@ sortCharactersInString('Alfannumerycznie Tego Nie Przetworzysz');
 // ponieważ domyślnie wielkość liter nie ma znaczenia, zwraca: aaceeeeefgiilmnnNNooprrrsttuwyyzzzz' gdzie jednak widać, że litery małe poprzedzają wielkie
 
 
-
-
