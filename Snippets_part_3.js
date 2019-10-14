@@ -1,16 +1,17 @@
-// W części 3:
+/*
+W części 3:
 
-// [1] Jak sprawdzić dokładny adres url bieżącej strony 
-// [2] Jak automatycznie sprawdzić, który kolejny dzień roku mamy dzisiaj (i ile dni do końca roku)
-// [3] Jak sprawdzić jaki dzisiaj jest dzień tygodnia
-// [4] Jak sprawdzić która jest w danym momencie godzina
-// [5] Jak sprawdzić ile jest dni międzydwoma datami
-// [6] Jak automatycznie sprawdzić, czy konkretna data wypada po innej, wskazanej jako referencyjna
-// [7] Jak automatycznie sprawdzić, czy konkretna data wypada przed inną, wskazaną jako referencyjna
-// [8] Jak automatycznie sprawdzić czy podane daty są takie same 
-// [9] Jak sprawdzić która data z przeszłości jest nam najbliższa
-// [10] Jak sprawdzić która data z posiadanego zbioru jest najwcześniejsza
-
+[1] Jak sprawdzić dokładny adres url bieżącej strony 
+[2] Jak automatycznie sprawdzić, który kolejny dzień roku mamy dzisiaj (i ile dni do końca roku)
+[3] Jak sprawdzić jaki dzisiaj jest dzień tygodnia
+[4] Jak sprawdzić która jest w danym momencie godzina
+[5] Jak sprawdzić ile jest dni międzydwoma datami
+[6] Jak automatycznie sprawdzić, czy konkretna data wypada po innej, wskazanej jako referencyjna
+[7] Jak automatycznie sprawdzić, czy konkretna data wypada przed inną, wskazaną jako referencyjna
+[8] Jak automatycznie sprawdzić czy podane daty są takie same 
+[9] Jak sprawdzić która data z przeszłości jest nam najbliższa
+[10] Jak sprawdzić która data z posiadanego zbioru jest najwcześniejsza
+*/
 
 // [1] Jak sprawdzić dokładny adres url bieżącej strony 
 const currentURL = () => window.location.href;

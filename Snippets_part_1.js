@@ -2,11 +2,11 @@
 W części 1:
 
 [1] Jak sprawdzić, czy wyrażenie funkcyjne spełnia jakieś proste kryterium dla wszystkich elementów tablicy
-[2] Jak sprawdzić, czy wszystkie elementy tablicy są jednakowe (równe sobie)
+[2] [9 Oct] Jak sprawdzić, czy wszystkie elementy tablicy są jednakowe (równe sobie)
 [3] Jak zmienić elementy tablic wewnętrznych (zagnieżdżonych) na stringi rozdzielone przecinkami (lub innym separatowem)
 [4] Jak zamienić elementy tablicy w kolejne punkty listy i umieścić je na stronie internetowej
-[5] Jak policzyć średnią arytmetyczną z liczb umieszczonych w tablicy
-[6] Jak policzyć średnią arytmetyczną ze zbioru, na którego elementach najpierw wykonujemy jakąć funkcję
+[5] [9 Oct] Jak policzyć średnią arytmetyczną z liczb umieszczonych w tablicy
+[6] [9 Oct] Jak policzyć średnią arytmetyczną ze zbioru, na którego elementach najpierw wykonujemy jakąć funkcję
 [7] Jak rozdzielić elementy tablicy na dwie grupy, bazując na wartościach innej tablicy (tzw. filtrującej)
 [8] Jak rozdzielić elementy tablicy na dwie grupy w oparciu o wskazane wyrażenie funkcyjne
 */

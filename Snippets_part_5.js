@@ -1,13 +1,15 @@
-// W części 5:
+/*
+W części 5:
 
-// [1] Jak utworzyć tablicę z kilku elementów pierwotnej tablicy pozostałych po usunięciu z jej LEWEJ strony n elementów
-// [2] Jak utworzyć tablicę z kilku elementów pierwotnej tablicy pozostałych po usunięciu z jej PRAWEJ strony n elementów
-// [3] Jak usuwać elementy z PRAWEJ strony tablicy (od końca) aż do zwrócenia przez określoną funkcję 'true'
-// [4] Jak wycinać elementy z tablicy, aż do spełnienia funkcyjnego warunku 'true'
-// [5] Jak sprawdzić czy element nadrzędny zawiera dany element podrzędny
-// [6] Jak usunąć powtarzające się elementy z tablicy (i zostawić te, które występują tylko raz)
-// [7] Jak zwrócić pierwszy klucz (z obiektu) spełniający określoną funkcję
-// [8] Jak zwrócić ostatni element tablicy spełniający określoną funkcję
+[1] Jak utworzyć tablicę z kilku elementów pierwotnej tablicy pozostałych po usunięciu z jej LEWEJ strony n elementów
+[2] Jak utworzyć tablicę z kilku elementów pierwotnej tablicy pozostałych po usunięciu z jej PRAWEJ strony n elementów
+[3] Jak usuwać elementy z PRAWEJ strony tablicy (od końca) aż do zwrócenia przez określoną funkcję 'true'
+[4] Jak wycinać elementy z tablicy, aż do spełnienia funkcyjnego warunku 'true'
+[5] Jak sprawdzić czy element nadrzędny zawiera dany element podrzędny
+[6] Jak usunąć powtarzające się elementy z tablicy (i zostawić te, które występują tylko raz)
+[7] Jak zwrócić pierwszy klucz (z obiektu) spełniający określoną funkcję
+[8] Jak zwrócić ostatni element tablicy spełniający określoną funkcję
+*/
 
 
 // [1] Jak utworzyć tablicę z kilku elementów pierwotnej tablicy pozostałych po usunięciu z jej LEWEJ strony n elementów

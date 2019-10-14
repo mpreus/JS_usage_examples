@@ -1,7 +1,8 @@
-/* W części 4:
+/* 
+W części 4:
 
 [1] Jak spłaszczyć tablicę z tablicami zagnieżdżonymi do jednego poziomu, zachowując wszystkie wartości (rekurencyjnie, czyli stopniowo zmniejszając poziomy zagnieżdżenia)
-[2] [2] Jak spłaszczyć tablicę z tablicami zagnieżdżonymi o podaną liczbę poziomów
+[2] Jak spłaszczyć tablicę z tablicami zagnieżdżonymi o podaną liczbę poziomów
 [3] Jak przypisać wartości domyślne wszystkim właściwościom (kluczom) w obiekcie wyjściowym, nawet jeśli są niezdefiniowane czy występują wielokrotnie
 [4] Jak wstrzymać wykonanie funkcji do czasu wykonanie wszystkich innych zaplanowanych czynności
 [5] Jak zamienić miarę kątową ze stopni na radiany

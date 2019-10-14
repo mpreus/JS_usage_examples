@@ -3,10 +3,10 @@ W części 2:
 
 [1] Jak sprawdzić czy dół strony internetowej jest widoczny na ekranie
 [2] Jak rozponać wielkość stringu w baitach (bytes)
-[3] Jak zmienić pierwszą literę stringu na wielką 
-[4] Jak zmienić każdą pierwszą literę w stringu wielowyrazowym na wielką
-[5] Jak zmienić pierwszą literę stringu na małą
-[6] Jak zmienić dowolny element w tablicę
+[3] [15 Oct] Jak zmienić pierwszą literę stringu na wielką 
+[4] [15 Oct] Jak zmienić każdą pierwszą literę w stringu wielowyrazowym na wielką
+[5] [15 Oct] Jak zmienić pierwszą literę stringu na małą
+[6] [15 Oct] Jak zmienić dowolny element w tablicę
 [7] Jak usunąć javascriptowe wartości fałszywe z tablicy
 [8] Jak automatycznie zliczyć wszystkie elementy danej wartości w tablicy 
 */

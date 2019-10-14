@@ -10,7 +10,6 @@ W części 8
 [7] Jak sprawdzić czy posiadana wartość jest obiektem
 [8] Jak sprawdzić czy posiadana wartość jest stringiem
 [9] Jak sprawdzić czy posiadana wartość jest niezdefiniowana
-
 */
 
 

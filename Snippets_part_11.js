@@ -4,7 +4,7 @@ W części 11:
 [1] Jak odciąć z końca stringu taką liczbę znaków, by string miał pożądaną długość
 [2] Jak przekonwertować wartość w liczbę całkowitą obsługiwaną przez JS
 [3] Jak zwrócić wszystkie elementy tablicy poza ściśle zdefiniowanymi (np. jako niepotrzebne)
-
+[4] [15 Oct] Jak odwrócić kolejność liter w stringu:
 */
 
 // [1] Jak odciąć z końca stringu taką liczbę znaków, by string miał pożądaną długość
