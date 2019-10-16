@@ -2,12 +2,12 @@
 
 // inspiracja z https://medium.com/@mayordesigns/demystifying-the-almighty-object-in-javascript-83937951809f 
 
-// obiekty wewnątrz nawiasów klamrowych przechowują dane (właściwości obiektu) w postaci par 'nazwa_właściwości: wartość' oddzielonych przecinkami
+// obiekty wewnątrz nawiasów klamrowych przechowują dane (właściwości obiektu) w postaci par 'nazwa_właściwości(tzw. klucz): wartość' oddzielonych przecinkami
 
 
 // I TWORZENIE OBIEKTÓW
 // tworzenie obiektów możliwe jest na kilka sposobów:
-// 1. przez użycie literału obiektowego, czyli wpisanie wprost całości:
+// 1. przez użycie literału obiektowego, czyli przypisanie określonej zmiennej całości pożądanego zbioru:
 let student = {
   firstName: "Marian",
   lastName: "Wracz",
@@ -19,13 +19,13 @@ let student = {
   aspirations: ['pracować w Google', 'pracować jak najmniej']
 }
 
-// możliwe jest też utworzenie nowego pustego obiektu w ten sposób:
+// możliwe jest też utworzenie nowego pustego obiektu przez przypisanie zmiennej pustych nawiasów klamrowych:
 let pupil = {};
 console.log(pupil); // zwraca pusty obiekt: {}
 // i dopiero teraz wpisywanie do niego zawartości, co możliwe jest przez proste przypisanie ze znakiem '=' 
 pupil.name = 'Piotr';
 pupil.surname = 'Zalewski';
-console.log(pupil); // zwraca cały obiekt: { name: 'Piotr', surname: 'Zalewski' }
+console.log(pupil); // zwraca cały obiekt z dwoma parami 'nazwa_właściwości(klucz): wartość' { name: 'Piotr', surname: 'Zalewski' }
 
 // 2. przez funkcję konstruktora i utworzenie nowej instancji:
 function Coder(name, surname, YearsOfExperience, height, age) {
